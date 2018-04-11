@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class GuiceInjectionTests {
+public class GuiceInjectionTest {
 
     private static final Injector injector = Guice.createInjector(new BillingModule());
 

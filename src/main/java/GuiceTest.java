@@ -22,6 +22,5 @@ public class GuiceTest {
         Receipt receipt = billingService.chargeOrder(pizzaOrder, creditCard);
 
         System.out.println(receipt.getReceiptMessage());
-
     }
 }
