@@ -1,6 +1,4 @@
-/**
- * @author sankal
- */
+
 public class PaypalCreditCardProcessor implements CreditCardProcessor {
 
     @Override

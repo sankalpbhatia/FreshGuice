@@ -1,6 +1,4 @@
-/**
- * @author sankal
- */
+
 public class Receipt {
 
     private String receiptMessage;

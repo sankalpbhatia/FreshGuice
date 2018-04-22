@@ -1,5 +1,4 @@
 /**
- * @author sankal
  */
 public class ChargeResult {
 

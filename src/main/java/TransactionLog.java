@@ -1,6 +1,4 @@
-/**
- * @author sankal
- */
+
 public interface TransactionLog {
     void logChargeResult(ChargeResult chargeResult);
 
