@@ -1,11 +1,7 @@
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.inject.Singleton;
-
 /**
  * Real billing service implementation
  */
-@Singleton
+
 public class RealBillingService implements BillingService {
 
     private  CreditCardProcessor processor;
@@ -15,8 +11,8 @@ public class RealBillingService implements BillingService {
      * @param processor processor
      * @param transactionLog transactionLog
      */
-    @Inject
-    public RealBillingService(@Named("Bank") CreditCardProcessor processor, TransactionLog transactionLog) {
+
+    public RealBillingService(CreditCardProcessor processor, TransactionLog transactionLog) {
         this.processor = processor;
         this.transactionLog = transactionLog;
     }
