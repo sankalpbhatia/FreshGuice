@@ -19,14 +19,6 @@ public class GuiceInjectionTest {
     }
 
     @Test
-    public void TestBillingServiceSingletonScope() {
-        BillingService billingService1 = injector.getInstance(BillingService.class);
-        BillingService billingService2 = injector.getInstance(BillingService.class);
-
-        Assert.assertTrue(billingService1 == billingService2);
-    }
-
-    @Test
     public void TestCreditCardProcessorInstanceOfPaypalCCProcessor() {
         CreditCardProcessor creditCardProcessor =
                 injector.getInstance(Key.get(CreditCardProcessor.class, Paypal.class));

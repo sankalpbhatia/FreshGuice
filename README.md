@@ -27,13 +27,12 @@ See classes in package for more details.
 The task here is to create Guice Bindings in the BillingModule such that the following constraints are satisfied: 
 
 1. All implementations of BillingService should be bound to RealBillingService.
-2. Injector should only provide a single instance of BillingService to all clients who ask for it.
-3. CreditCardProcessor interface annotated with @Paypal should be bound to PaypalCreditCardProcessor class.
-4. CreditCardProcessor interface named with string “Bank” should be bound to BankCreditCardProcessor class.
-5. BillingService instances returned by injector should have instance of BankCreditCardProcessor as their dependency.
-6. All implementations of TransactionLog should be bound to InMemoryTransactionLog.
+2. CreditCardProcessor interface annotated with @Paypal should be bound to PaypalCreditCardProcessor class.
+3. CreditCardProcessor interface named with string “Bank” should be bound to BankCreditCardProcessor class.
+4. BillingService instances returned by injector should have instance of BankCreditCardProcessor as their dependency.
+5. All implementations of TransactionLog should be bound to InMemoryTransactionLog.
 
-All 6 unit tests in GuiceInjectionTests should pass if the above conditions are satisfied.
+All 5 unit tests in GuiceInjectionTests should pass if the above conditions are satisfied.
 You should also be able to run the main method in GuiceTest. 
  
 For now, [this](https://github.com/google/guice/wiki/GettingStarted) is the user guide to follow. 
